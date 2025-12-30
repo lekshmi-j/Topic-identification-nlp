@@ -5,3 +5,5 @@ nltk
 gensim
 matplotlib
 seaborn
+wordcloud
+jupyter
