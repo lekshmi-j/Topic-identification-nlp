@@ -77,3 +77,19 @@ def extract_topics(model, feature_names: List[str], top_n: int = 10):
         topics.append(top_words)
 
     return topics
+#-----------Top Words---------
+
+def get_top_words(model, feature_names, n_top_words=10):
+    topics = []
+    for topic_idx, topic in enumerate(model.components_):
+        top_words = [feature_names[i] for i in topic.argsort()[:-n_top_words - 1:-1]]
+        topics.append(top_words)
+    return topics
+
+lda_topics = get_top_words(
+    lda,
+    bow_vectorizer.get_feature_names_out()
+)
+
+for i, topic in enumerate(lda_topics):
+    print(f"Topic {i}: {topic}")
