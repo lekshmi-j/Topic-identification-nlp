@@ -205,9 +205,8 @@ topic-identification/
 │
 ├── requirements.txt
 └── README.md
-**
-🚀 How to Run
-**
+
+**🚀 How to Run**
 Install dependencies
 
 pip install -r requirements.txt
@@ -222,4 +221,5 @@ Run notebooks in order:
 03_topic_modeling.ipynb
 
 04_topic_classification.ipynb
+
 
