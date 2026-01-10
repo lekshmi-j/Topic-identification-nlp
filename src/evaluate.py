@@ -9,6 +9,8 @@ Includes:
 from typing import List
 from gensim.corpora.dictionary import Dictionary
 from gensim.models.coherencemodel import CoherenceModel
+from sklearn.metrics import accuracy_score, classification_report
+
 
 
 # ---------- Coherence ----------
@@ -56,3 +58,15 @@ def compute_topic_diversity(topics: List[List[str]], top_k: int = 10):
         total_words += len(words)
 
     return len(unique_words) / total_words
+
+def evaluate_classifier(y_true, y_pred):
+    """
+    Evaluate classification model performance.
+
+    Returns:
+        accuracy, classification report (string)
+    """
+    acc = accuracy_score(y_true, y_pred)
+    report = classification_report(y_true, y_pred)
+    return acc, report
+
