@@ -1,8 +1,8 @@
-Topic Identification using NLP
+**Topic Identification using NLP**
 
 (Unsupervised Topic Modeling & Supervised Topic Classification)
 
-🔍 Project Overview
+🔍** Project Overview**
 
 This project explores topic identification in text data using both unsupervised and supervised NLP techniques.
 The goal is to understand how topics can be discovered, interpreted, and predicted from raw text using classical machine learning methods.
@@ -21,7 +21,7 @@ Inference on unseen text
 
 Clean modular ML code
 
-❓ Problem Statement
+❓** Problem Statement**
 
 Given a large collection of text documents:
 
@@ -33,7 +33,7 @@ What are the trade-offs between topic modeling and classification?
 
 This project answers these questions using the 20 Newsgroups dataset.
 
-📊 Dataset
+📊** Dataset**
 
 Dataset: 20 Newsgroups
 Description:
@@ -55,7 +55,7 @@ Use the data without labels (topic modeling)
 
 Use the same data with labels (topic classification)
 
-🧠 Approach
+🧠 **Approach**
 1️⃣ Text Preprocessing
 
 Lowercasing
@@ -132,7 +132,7 @@ Topic Classification → predicted topic label
 
 This demonstrates end-to-end usability, not just training.
 
-🤖 Models Used
+🤖 **Models Used**
 Task	Model
 Topic Discovery	LDA
 Topic Discovery	NMF
@@ -172,7 +172,7 @@ Best Use	Discovery	Automation
 Key insight:
 No single model is “best” — model choice depends on the task and data availability.
 
-📚 Key Learnings
+📚** Key Learnings**
 
 Topic modeling and classification solve different problems
 
@@ -205,9 +205,9 @@ topic-identification/
 │
 ├── requirements.txt
 └── README.md
-
+**
 🚀 How to Run
-
+**
 Install dependencies
 
 pip install -r requirements.txt
@@ -222,3 +222,4 @@ Run notebooks in order:
 03_topic_modeling.ipynb
 
 04_topic_classification.ipynb
+
